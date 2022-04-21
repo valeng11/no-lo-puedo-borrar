@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-right: 2rem;
+    align-items: flex-end;
+}
+/* Header*/
+.encabezado{
+    background-color: cadetblue;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.barraNavegacion li{
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 5px;
+    list-style: none;
+    width: fit-content;
+    align-items: flex-end;
+}
+
+/*Body*/
+.body {
+    background-image: url(./imagenes/Fondo\ PAG\ copia\ 2.jpg);
+    position: relative;
+    min-height: 100vh;
+
+}
+.titulo1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.texto1{
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+.texto2{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+.galeriaImagen {
+    max-width: 50%;
+}
+.imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContent__cards{
+    display: grid;
+ grid-column: 3 / 4;
+     border: solid 1px rgb(199, 163, 20);
+     background-color: rgb(213, 203, 203); 
+}
+
+/*Footer*/
+.instagramlogo{
+    width: 70px;
+    height: 50px;}
+.CardUno {
+    width: 30%; /* Con esto medis el cuadrado del primer texto */
+}
+.CardDos {
+    width: auto; /* Con esto medis el cuadrado del segundo texto */
+}
+.footer{
+    background-color: cadetblue;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+    .textoContacto{
+        border: 1px;
+        font-family: 'Bebas Neue', cursive;       
+    }
+
+    .footer a{
+        color: wheat
+    }
+
+
+
+
+
+
+
+ /* Media querie 768px*/
+
+ @media only screen and (max-width:768px) {
+    
+    .encabezado{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .galeria{
+        flex-direction: column;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .galeriaImagen {
+        max-width: 50%;
+    }
+     .footer{
+        background-color: cadetblue;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .titulo1{
+        margin-right: 10%;
+    }
+    .encabezado{
+        width: 100%;
+       margin: auto;
+       
+    }
+    .mainContent__cards{
+        display: grid;
+        grid-column: 3 / 4;
+    }
+    
+    .CardUno{
+        width: auto;
+        margin-left: 10%;
+    }
+    
+    .CardDos{
+        width: auto;
+    }
+    
+    
+    .galeria{
+        flex-direction: column;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .galeriaImagen {
+        max-width: 50%;
+    }
+     .footer{
+        background-color: cadetblue;
+        width: 100%;
+    }
+}
